@@ -33,7 +33,7 @@ function App() {
         <Route
           path="/suiteJunior"
           element={<SuiteJunior></SuiteJunior>}></Route>
-        <Route path="/Contacto" element={<Contacto></Contacto>}></Route>
+        <Route path="/contacto" element={<Contacto></Contacto>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
