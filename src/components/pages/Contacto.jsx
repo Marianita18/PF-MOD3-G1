@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import "../pages/styles/seccionContacto.css";
-import FormularioContacto from "./Formularios/FormularioContacto";
+import FormularioContacto from "./formularios/FormularioContacto";
 
 
 export default function Contacto() {
