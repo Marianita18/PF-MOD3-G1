@@ -1,0 +1,14 @@
+:root {
+  --azul1: #2B3B51;
+  --azul2: #3E5F75;
+  --azul3: #7AA0B6;
+  --azul4: #CBD6E0;
+}
+
+footer{
+    background-image: linear-gradient(to top, #2b3b51, #394c63, #475f76, #567289, #65859c, #7392a8, #819fb5, #8fadc1, #9eb7c9, #adc1d1, #bcccd8, #cbd6e0);
+}
+
+.itemActive{
+    color: var(--azul1);
+}

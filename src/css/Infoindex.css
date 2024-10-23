@@ -1,0 +1,119 @@
+
+.Informacion{
+    background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg);
+  margin: 0;
+   
+}
+.servicios{
+    background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg);
+    /* margin: -30px; */
+}
+.parrafo-index{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size: 2vw; 
+    margin: 5px 0; 
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5; 
+}
+.title{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+   font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 50px;
+}
+.parrafo{
+    font-size: 18px;
+    margin: 30px;
+    font-family: sans-serif;
+    color: rgb(22, 21, 21);
+    font-weight: 500;
+ 
+}
+.lista{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.divinfo{
+    /* border: solid 3px rgb(100, 100, 100); */
+    
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 0px 10px;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 50px;
+  }
+  
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+.subtitle{
+  
+   
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+.padre{
+    margin: 80px;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap;
+     */
+   
+}
+.div{
+    width: auto;
+    margin: auto auto;
+}
+.icon{
+    font-size: 50px;
+    margin: 0px 220px;
+}
+ @media (max-width: 700px) {
+    .padre{
+      
+        flex-wrap: wrap;
+
+    }
+    .title{
+        font-size: 35px;
+    }
+    .parrafo-index {
+        font-size: 4vw; 
+        margin: 10px 0;
+    }
+}
+@media(max-width:500px){
+    .div{
+        width: 100%;
+      
+     
+ 
+    }
+    .icon{
+       margin: 0px 130px;
+    }
+    .roboto-thin{
+        text-align: center;
+        font-size: 2vh;
+    }
+}
