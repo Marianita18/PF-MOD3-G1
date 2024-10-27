@@ -1,6 +1,8 @@
 import React from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { NavLink } from 'react-router-dom';
+import "./styles/navbar.css";
 import Swal from 'sweetalert2';
 
 const LogIn = ({ show, handleClose }) => {
@@ -79,8 +81,8 @@ const LogIn = ({ show, handleClose }) => {
                     </Form.Group>
 
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>Registrarse</Button>
-                        <Button variant="primary" type="submit">Iniciar Sesión</Button>
+                        <NavLink className="btn btn-secondary">Registrarse</NavLink>
+                        <Button classNamet="botonLogIn" type="submit">Iniciar Sesión</Button>
                     </Modal.Footer>
                 </Form>
             </Modal.Body>
