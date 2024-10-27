@@ -91,17 +91,17 @@ const LogIn = ({ show, handleClose }) => {
                 {errors.password && (
                   <p className="text-danger">{errors.password.message}</p>
                 )}
+                <Button className="botonModalLogIn w-100 mt-3" type="submit">
+                  Iniciar Sesión
+                </Button>
+                
+                <hr />
                 <p className="d-2 text-center small fw-light italic text-primary mt-2">
                   ¿Quieres realizar una reserva?
                 </p>
                 <NavLink className="btn btn-secondary w-100" to="/registro">
                   ¡Regístrate!
-                </NavLink>
-                <hr />
-                <p className="fw-bold small text-center">Si ya sos usuario, inicia sesión</p>
-                <Button className="botonModalLogIn w-100 mt-3" type="submit">
-                  Iniciar Sesión
-                </Button>
+                </NavLink>            
               </Form.Group>
             </Form>
           </Col>
