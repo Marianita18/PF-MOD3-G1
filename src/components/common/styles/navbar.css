@@ -21,6 +21,7 @@
 }
 
 .modalLogIn {
+ font-family: poppins;
   background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg)!important ;
 }
 
@@ -35,3 +36,7 @@
   color:white;
 
 }
+ .modalTitleTipografia {
+  font-family: poppins;
+  font-size: 1.5rem;
+ }

@@ -34,7 +34,7 @@ const LogIn = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Iniciar Sesión</Modal.Title>
+      <Modal.Title className="modalTitleTipografia">Iniciar Sesión</Modal.Title>
       </Modal.Header>
 
       <Modal.Body className="modalLogIn">
@@ -53,7 +53,7 @@ const LogIn = ({ show, handleClose }) => {
           <Col md={6}>
             <Form onSubmit={handleSubmit(onSubmit, onError)}>
               <Form.Group className="mb-3" controlId="correoElectronico">
-                <Form.Label>Correo Electrónico</Form.Label>
+                <Form.Label className="fw-bold">Correo Electrónico</Form.Label>
                 <Form.Control
                   type="email"
                   placeholder="juanperez@gmail.com"
@@ -71,7 +71,7 @@ const LogIn = ({ show, handleClose }) => {
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="contraseña">
-                <Form.Label>Contraseña</Form.Label>
+                <Form.Label className="fw-bold">Contraseña</Form.Label>
                 <Form.Control
                   type="password"
                   placeholder="Holamund0"
@@ -94,10 +94,11 @@ const LogIn = ({ show, handleClose }) => {
                 <p className="d-2 text-center small fw-light italic text-primary mt-2">
                   ¿Quieres realizar una reserva?
                 </p>
-                <NavLink className="btn btn-secondary w-100" to="/registrarse">
-                  ¡Registrate!
+                <NavLink className="btn btn-secondary w-100" to="/registro">
+                  ¡Regístrate!
                 </NavLink>
                 <hr />
+                <p className="fw-bold small text-center">Si ya sos usuario, inicia sesión</p>
                 <Button className="botonModalLogIn w-100 mt-3" type="submit">
                   Iniciar Sesión
                 </Button>
