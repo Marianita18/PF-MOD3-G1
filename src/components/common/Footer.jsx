@@ -1,7 +1,8 @@
-import {NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Logo from "../../assets/imgCommon/Logo.png";
 import "./styles/footer.css";
+import Button from "react-bootstrap/Button";
+import Logo from "../../assets/imgCommon/imgFooter/Logo.png";
+import { NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="text-center py-4">
@@ -11,44 +12,46 @@ const Footer = () => {
             <img
               src={Logo}
               className="img-fluid"
-              width="270"
+              width="250"
               alt="Logo Hotel Oasis Urbano"
             />
             <h6>
-              <a className="text-decoration-none titulo text-white" to="/"></a>
+              <a
+                className="text-decoration-none titulo text-white"
+                href="../index.html"></a>
             </h6>
             <a
-              className="px-2 itemActive"
+              className="fz itemActive px-2"
               href="https://www.instagram.com/"
               target="_blank">
               <i className="bi bi-instagram fs-5"></i>
             </a>
             <a
-              className="px-2  itemActive"
+              className="fz itemActive px-2"
               href="https://www.facebook.com/"
               target="_blank">
               <i className="bi bi-facebook fs-5"></i>
             </a>
             <a
-              className="px-2  itemActive"
+              className="fz itemActive px-2"
               href="https://www.x.com/"
               target="_blank">
               <i className="bi bi-twitter-x fs-5"></i>
             </a>
             <a
-              className="px-2 itemActive"
+              className="fz itemActive px-2"
               href="https://www.youtube.com/"
               target="_blank">
               <i className="bi bi-youtube fs-5"></i>
             </a>
             <a
-              className="px-2  itemActive"
+              className=" fz itemActive px-2"
               href="https://www.linkedin.com/"
               target="_blank">
               <i className="bi bi-linkedin fs-5"></i>
             </a>
             <a
-              className="px-2  itemActive"
+              className="fz itemActive px-2"
               href="https://discord.com/"
               target="_blank">
               <i className="bi bi-discord fs-5"></i>
@@ -59,24 +62,23 @@ const Footer = () => {
             <ul className="list-unstyled fz">
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                  Email: info@hoteloasisurbano.com
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  Email: info@magneto.com
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                  Teléfono: +54 381 578-3030
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  Teléfono: +123 456 7890
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                  Dirección: Av. General Paz 576, Piso 9, oficina 2 San Miguel
-                  de Tucumán, Argentina
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  Dirección: Calle Ficticia 123, Ciudad, País
                 </NavLink>
               </li>
             </ul>
@@ -86,30 +88,23 @@ const Footer = () => {
             <ul className="list-unstyled fz">
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                   Terminos y condiciones
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                   Privacidad
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  to="*"
+                  className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                   Configuración de cookies
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/Error404"
-                  className="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                  Terminos y condiciones
                 </NavLink>
               </li>
             </ul>
@@ -125,7 +120,7 @@ const Footer = () => {
                 id="emailFooter"
                 placeholder="Escribe tu email aqui"
               />
-              <Button variant="outline-light fw-bold" type="submit">
+              <Button variant="outline-light" type="submit">
                 Unirse
               </Button>
             </form>
