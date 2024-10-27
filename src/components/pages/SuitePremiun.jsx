@@ -14,7 +14,7 @@ export default function SuitePremiun() {
     <div className="Informacion">
     <body className="container mainSectionContacto Informacion">
       <div className="d-flex justify-content-around align-items-center mt-3 bg-info-subtle text-center py-3">
-        <h3 className="fs-1 text-center">Suite Premiun</h3>
+        <h3 className="fs-1 text-center">Suite Premium</h3>
       </div>
       <Container className="mt-4 container-fluid">
         <Row>
