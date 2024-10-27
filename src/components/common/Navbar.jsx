@@ -5,9 +5,18 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/imgCommon/imgNavbar/Logo.png";
+import LogIn from "./LogIn";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import "./styles/navbar.css";
+import { useState } from "react";
+
 
 function NavBar() {
+  const [mostrarModalLogIn, setMostrarModalLogIn] = useState(false);
+
+  const handleMostrarModalLogIn = () => setMostrarModalLogIn(true);
+  const handleCerrarModalLogIn = () => setMostrarModalLogIn(false);
+
   return (
     <Navbar
       expand="lg"
@@ -54,9 +63,9 @@ function NavBar() {
             <NavLink className="nav-link fw-bold" end to="/contacto">
               Contacto
             </NavLink>
-            <Button className="fw-bold buttonLogin" variant="outline-light">
+            <NavLink className="btn btn-outline fw-bold text-white botonLogIn">
               Login
-            </Button>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
