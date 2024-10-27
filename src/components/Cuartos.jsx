@@ -21,7 +21,15 @@ export const Cuartos=()=>{
              delay: 1000, 
              disableOnInteraction: true
          }}
-         loop={true}>
+         loop={true}
+         breakpoints={{
+          200:{slidesPerView:1,spaceBetween:0},
+          400:{slidesPerView:1,spaceBetween:0},
+          640: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 40 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+          // 1280: { slidesPerView: 4, spaceBetween: 40 }
+        }}>
             
             <SwiperSlide>
               <div className="dormitorios">

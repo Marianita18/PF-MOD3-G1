@@ -88,7 +88,7 @@ li{
 .imgrestaurante{
     width: 600px;
     height: 400px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 
 }
 .img{
@@ -124,11 +124,19 @@ li{
         width: 100%;
     }
     .img-dormitorio{
-        width: 600px;
+        width:100%;
+        margin: 0px 100px;
         
+    }
+    .dormitorios{
+        margin: 0px auto;
+    }
+    .plato{
+        margin: 0px auto;
     }
     .plato-dormitorio{
       width: 100%;
+      height: auto;
     }
 }
 @media(max-width:700px){
@@ -142,28 +150,37 @@ li{
   .li{
     font-size: 25px;
   }
+  /* .comida{
+    /* margin: 100px; */
+  
   .dormitorios{
-    width: 100%;
-    /* height: auto; */
+    margin:  20px auto;
+    
   }
   .img-dormitorio{
     width: 100%;
-    height: 350px;
-    margin: 50px 1px;
+    height: auto;
+  
   
   }
   /* .img-dormitorio:hover{
     width:500px;
     height: 800px;
   } */
-    .plato{
+    /* .plato{
         width: 100%;
-       /* height: 100%; */
+       height: auto;
        
-    }
+    } */
+     .imgrestaurante{
+        margin: 0px auto;
+     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .imgrestaurante{
         width: 100%;
+    }
+    .img-dormitorio{
+        margin: 0px auto;
     }
 }
