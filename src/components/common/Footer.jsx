@@ -2,6 +2,8 @@ import "./styles/footer.css";
 import Button from "react-bootstrap/Button";
 import Logo from "../../assets/imgCommon/imgFooter/Logo.png";
 import { NavLink } from "react-router-dom";
+import Error404 from "../pages/Error404";
+
 
 const Footer = () => {
   return (
@@ -120,9 +122,9 @@ const Footer = () => {
                 id="emailFooter"
                 placeholder="Escribe tu email aqui"
               />
-              <Button variant="outline-light" type="submit">
+              <NavLink className="btn btn-outline-light" to="*" type="submit">
                 Unirse
-              </Button>
+              </NavLink>
             </form>
           </div>
         </article>

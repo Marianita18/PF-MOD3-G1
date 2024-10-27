@@ -41,8 +41,9 @@ function App() {
           element={<SuiteJunior></SuiteJunior>}
         ></Route>
         <Route path="/suitePremiun" element={<SuitePremiun></SuitePremiun>}></Route>
-        <Route path="/apart" element={<Error404></Error404>}></Route>
+        
         <Route path="/contacto" element={<Contacto></Contacto>}></Route>
+        <Route path="/*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
