@@ -47,9 +47,9 @@ function NavBar() {
               <NavLink className="nav-link fw-bold" end to="/contacto">
                 Contacto
               </NavLink>
-              <Button className="btn btn-outline-ligth fw-bold text-white botonLogIn" onClick={handleMostrarModalLogIn}>
+              <NavLink className="btn btn-outline-ligth fw-bold text-white botonLogIn" onClick={handleMostrarModalLogIn}>
                 Login
-              </Button>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

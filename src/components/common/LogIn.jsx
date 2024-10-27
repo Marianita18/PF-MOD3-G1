@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
+import { Modal, Button, Form, Col, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
 import "./styles/navbar.css";
@@ -13,7 +13,7 @@ const LogIn = ({ show, handleClose }) => {
     } = useForm();
 
     const onSubmit = (data) => {
-                Swal.fire({
+        Swal.fire({
             icon: 'success',
             title: 'Inicio de sesión exitoso',
             text: '¡Bienvenido!',
@@ -23,68 +23,81 @@ const LogIn = ({ show, handleClose }) => {
     };
 
     const onError = () => {
-        
         Swal.fire({
             icon: 'error',
-            title: 'Error en el formulario',
+            title: 'Error',
             text: 'Por favor, revisa los campos obligatorios.',
             confirmButtonText: 'Cerrar'
         });
     };
 
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} >
             <Modal.Header closeButton>
                 <Modal.Title>Iniciar Sesión</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
-                <Form onSubmit={handleSubmit(onSubmit, onError)}>
-                    <Form.Group className="mb-3" controlId="correoElectronico">
-                        <Form.Label>Correo Electrónico</Form.Label>
-                        <Form.Control
-                            type="email"
-                            placeholder="juanperez@gmail.com"
-                            {...register("email", {
-                                required: "El correo es obligatorio",
-                                pattern: {
-                                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                                    message: "Formato de correo no válido",
-                                },
-                            })}
+                <Row>
+                    <Col md={6} className="d-flex align-items-center justify-content-center">
+                        <img 
+                            src="https://images.pexels.com/photos/2227829/pexels-photo-2227829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            alt="Hotel vista a ciudad" 
+                            className="img-fluid imagenModalLogIn" 
+                            
                         />
-                        {errors.email && (
-                            <p className="text-danger">{errors.email.message}</p>
-                        )}
-                    </Form.Group>
+                    </Col>
 
-                    <Form.Group className="mb-3" controlId="contraseña">
-                        <Form.Label>Contraseña</Form.Label>
-                        <Form.Control
-                            type="password"
-                            placeholder="Holamund0"
-                            {...register("password", {
-                                required: "La contraseña es obligatoria",
-                                minLength: {
-                                    value: 6,
-                                    message: "La contraseña debe tener al menos 6 caracteres",
-                                },
-                                pattern: {
-                                    value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/,
-                                    message: "La contraseña debe contener al menos una letra y un número",
-                                },
-                            })}
-                        />
-                        {errors.password && (
-                            <p className="text-danger">{errors.password.message}</p>
-                        )}
-                    </Form.Group>
+                                       <Col md={6}>
+                        <Form onSubmit={handleSubmit(onSubmit, onError)}>
+                            <Form.Group className="mb-3" controlId="correoElectronico">
+                                <Form.Label>Correo Electrónico</Form.Label>
+                                <Form.Control
+                                    type="email"
+                                    placeholder="juanperez@gmail.com"
+                                    {...register("email", {
+                                        required: "El correo es obligatorio",
+                                        pattern: {
+                                            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                            message: "Formato de correo no válido",
+                                        },
+                                    })}
+                                />
+                                {errors.email && (
+                                    <p className="text-danger">{errors.email.message}</p>
+                                )}
+                            </Form.Group>
 
-                    <Modal.Footer>
-                        <NavLink className="btn btn-secondary">Registrarse</NavLink>
-                        <Button classNamet="botonLogIn" type="submit">Iniciar Sesión</Button>
-                    </Modal.Footer>
-                </Form>
+                            <Form.Group className="mb-3" controlId="contraseña">
+                                <Form.Label>Contraseña</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    placeholder="Holamund0"
+                                    {...register("password", {
+                                        required: "La contraseña es obligatoria",
+                                        minLength: {
+                                            value: 6,
+                                            message: "La contraseña debe tener al menos 6 caracteres",
+                                        },
+                                        pattern: {
+                                            value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/,
+                                            message: "La contraseña debe contener al menos una letra y un número",
+                                        },
+                                    })}
+                                />
+                                {errors.password && (
+                                    <p className="text-danger">{errors.password.message}</p>
+                                )}
+                                <p className='d-2 text-center small fw-light italic text-primary mt-2'>¿Quieres realizar una reserva?</p>
+                                <NavLink className="btn btn-secondary w-100" to="/registrarse">¡Registrate!</NavLink>
+                            </Form.Group>
+
+                            <Modal.Footer>
+                               <Button className="botonLogIn w-100" type="submit">Iniciar Sesión</Button>
+                            </Modal.Footer>
+                        </Form>
+                    </Col>
+                </Row>
             </Modal.Body>
         </Modal>
     );

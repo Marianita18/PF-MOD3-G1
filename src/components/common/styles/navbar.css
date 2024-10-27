@@ -10,7 +10,16 @@
 }
 
 .botonLogIn:hover {
-  color: #ddd !important; 
-  background-color: #2B3B51 !important;
-  border-color: #2B3B51 !important;
+  color: #ddd ; 
+  background-color: #2B3B51 ;
+  border-color: #2B3B51 ;
+}
+
+.imagenModalLogIn {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.modalLogIn {
+  background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg) ;
 }
