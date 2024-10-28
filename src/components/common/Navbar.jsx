@@ -13,6 +13,7 @@ function NavBar() {
   const handleCerrarModalLogIn = () => setMostrarModalLogIn(false);
 
   return (
+
     <>
       <Navbar expand="lg" className="nav mx-0 px-0 my-0 py-0" data-bs-theme="dark">
         <Container fluid>
@@ -56,6 +57,7 @@ function NavBar() {
       </Navbar>
       <LogIn show={mostrarModalLogIn} handleClose={handleCerrarModalLogIn} />
     </>
+
   );
 }
 
