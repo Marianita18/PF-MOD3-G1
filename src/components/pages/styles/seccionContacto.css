@@ -1,0 +1,67 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: 600;
+    font-style: normal;
+    .poppins-thin {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+  
+  .mainSectionContacto {
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    font-family: poppins;
+  }
+  
+  .bannerContacto {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .bannerContactoImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tituloSeccionContacto {
+    color: white;
+  }
+  
+  .seccionContactoInfo {
+    background-color: #9DB2BF;
+    width: 100%;
+     
+  }
+  .botonFormularioContacto {
+    background-color: #27374D !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease !important;
+    
+  }
+  
+  .botonFormularioContacto:hover {
+    background-color: #526D82 !important;
+    color: #DDE6ED !important;
+  }
+  .seccionContactoMapa {
+    background-color: #27374D;
+    color:#dde6ed;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style:normal;
+  }
