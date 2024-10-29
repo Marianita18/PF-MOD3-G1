@@ -1,4 +1,4 @@
-import "../css/carousel.css"
+// import "../css/carousel.css"
 
 import { motion } from 'framer-motion';
 import 'swiper/css';

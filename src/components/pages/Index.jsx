@@ -1,5 +1,6 @@
-
+import { Carrusel } from "./ComponenteIndex/Carrusel";
 export default function Index() {
-  return <div>Index</div>;
+  <Carrusel></Carrusel>
+ 
 }
 
