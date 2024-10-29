@@ -1,5 +1,10 @@
 
 export default function Index() {
-  return <div>Index</div>;
+  return(
+    <>
+    <div>Index Este es el Index 20.1</div>;
+  </>
+  ) 
+
 }
 
