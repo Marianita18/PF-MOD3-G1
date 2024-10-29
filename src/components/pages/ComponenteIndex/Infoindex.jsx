@@ -1,6 +1,6 @@
-import "../css/Infoindex.css"
+import "../styles/StyleIndex/Infoindex.css"
 import { motion } from "framer-motion"
-import { Cuartos } from "./Cuartos"
+// import { Cuartos } from "./Cuartos"
 export const Infoindex=()=>{
     return(
        <>

@@ -1,4 +1,4 @@
-import Index from "./components/pages/Index";
+import Index from "./components/pages/Index.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import GaleriaImagen from "./components/pages/GaleriaImagen";
@@ -12,7 +12,7 @@ import Error404 from "./components/pages/Error404";
 import Footer from "./components/common/Footer";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
-import Servicios from "./components/pages/Servicios";
+// import Servicios from "./components/pages/Servicios";
 import Administrador from "./components/pages/Administrador";
 
 function App() {

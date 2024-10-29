@@ -1,5 +1,5 @@
-// import "../css/carousel.css"
-
+ 
+import"../styles/StyleIndex/carousel.css"
 import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
