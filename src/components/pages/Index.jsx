@@ -1,4 +1,4 @@
-import { Carrusel } from "./ComponenteIndex/Carrusel"
+import { Carrusel } from "../pages/componentesIndex/Carrusel"
 export default function Index() {
   return(
     <>

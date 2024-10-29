@@ -1,0 +1,133 @@
+.carouseltitle{
+    text-align: start;
+    font-family: sans-serif;
+    font-size: 87px;
+    font-weight: bold;
+    margin: 10px;
+}
+.carousel-inner{
+height: 700px;
+}
+.gridflex{
+    margin: -500px;
+}
+.disfruta {
+    padding: 2vw 1vw; 
+    width: auto;
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255);
+    height: 15vh; 
+    margin: 40vh auto; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+.carouselsubtitle{
+     color: rgb(53, 52, 52);
+      font-size: 40px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin: 0px 0px;
+}
+.img-carousel{
+border-radius: 1px;
+}
+.explora{
+    /* margin: 0px 20px; */
+    border: none;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 24px;
+    /* padding: 5px; */
+   width: auto;
+   color: white;
+   margin: 0px 0px;
+   height: 70px;
+    border-radius: 50px;
+    background-color: rgb(53, 64, 117);
+}
+@media (max-width: 1500px) {
+  .carousel-inner {
+      width: 100vw;
+      height: 1000px;
+  }
+  .img-carousel {
+      height: 900px;
+  }
+  .disfruta {
+      width: 1000px;
+      /* padding: 7vw 1vw; */
+      height: 100px;
+      margin: 5vh auto;
+  }
+}
+@media (max-width: 1000px) {
+  .carouseltitle {
+      font-size: 80px;
+  }
+  /* .carousel-caption{
+    flex-wrap: wrap;
+  } */
+  .carousel-inner {
+      width: 100vw;
+      height: 1300px;
+  }
+  .img-carousel {
+      height: 1000px;
+  }
+  .carouselsubtitle {
+      font-size: 26px;
+  }
+  .explora {
+      font-size: 20px;
+  }
+  .disfruta{
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .carouseltitle {
+      font-size: 80px;
+  }
+  .carousel-inner {
+      width: 100vw;
+      height: 800px;
+  }
+  .img-carousel {
+      height: 960px;
+  }
+  .carouselsubtitle {
+      font-size: 26px;
+  }
+  .explora {
+      font-size: 20px;
+  }
+  .disfruta {
+      width: 100%;
+      /* padding: 1vw 2vw; */
+      height: 100px;
+      height: 80px;
+      margin: 10vh auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .carouseltitle {
+      font-size: 54px;
+  }
+  .carousel-inner {
+      width: 100vw;
+      height: 750px;
+  }
+  .carouselsubtitle {
+      font-size: 20px;
+
+  }
+  .disfruta {
+    width: 100%;
+    height: 100px;
+      margin: 19vh auto;
+  }
+}
