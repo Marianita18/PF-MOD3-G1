@@ -6,7 +6,8 @@
 
 }
 .comida{
-    margin: 100px;
+    margin: 50px;
+    background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg);
 }
 .plato-dormitorio{
     width: 600px ;
@@ -19,7 +20,9 @@
     width: 100%;
 }
 .sectionrestaurante{
-    margin: 10px;
+    height: 100%;
+    margin: 0px;
+    background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg);
 }
 .div-restaurante{
     margin: 0px 70px;

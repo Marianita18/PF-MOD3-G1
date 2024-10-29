@@ -1,5 +1,7 @@
-import "../css/Comida.css"
-import "../css/Infoindex.css"
+// import "../css/Comida.css"
+// import "../css/Infoindex.css"
+import "./styleIndex/Comida.css"
+import "./styleIndex/Infoindex.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; //
 
@@ -48,7 +50,7 @@ export const Restaurantee = () => {
               640: { slidesPerView: 1, spaceBetween: 10 },
               768: { slidesPerView: 2, spaceBetween: 20 },
               1024: { slidesPerView: 3, spaceBetween: 30 },
-              1280: { slidesPerView: 4, spaceBetween: 40 }
+              1280: { slidesPerView: 4, spaceBetween: 40}
             }}>
                 
                 <SwiperSlide>
