@@ -2,6 +2,11 @@ import "./styles/footer.css";
 import Button from "react-bootstrap/Button";
 import Logo from "../../assets/imgCommon/imgFooter/Logo.png";
 import { NavLink } from "react-router-dom";
+import Error404 from "../pages/Error404";
+import FormularioFooter from "./FormularioFooter.jsx";
+
+
+
 
 const Footer = () => {
   return (
@@ -111,19 +116,7 @@ const Footer = () => {
           </div>
           <div className="col-12 col-sm-3 col-md-3 col-lg-3 text-sm-center text-md-start text-lg-start py-2">
             <h6 className="itemActive fw-bold">Suscríbete y recibe noticias</h6>
-            <form
-              className="d-flex ms-sm-0 me-md-0 me-lg-5"
-              id="formSuscripcion">
-              <input
-                className="form-control me-2 fz"
-                type="email"
-                id="emailFooter"
-                placeholder="Escribe tu email aqui"
-              />
-              <Button variant="outline-light" type="submit">
-                Unirse
-              </Button>
-            </form>
+            <FormularioFooter></FormularioFooter>
           </div>
         </article>
       </section>
