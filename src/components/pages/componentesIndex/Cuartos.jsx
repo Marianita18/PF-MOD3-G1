@@ -1,6 +1,9 @@
-import "../css/Comida.css"
-import "../css/Infoindex.css"
-import "../css/testimonios.css"
+// import "../css/Comida.css"
+// import "../css/Infoindex.css"
+// import "../css/testimonios.css"
+import "./styleIndex/Comida.css"
+import "./styleIndex/Infoindex.css"
+import "./styleIndex/testimonios.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; 
 import { delay, motion } from "framer-motion";
