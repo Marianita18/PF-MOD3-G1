@@ -1,8 +1,10 @@
 import { Reservas } from "./reserva/reserva"
+import { Carrusel } from "./componentesIndex/Carrusel"
 export default function Index() {
   return (
     <>
-   <h1>index por si no funciona el deploy</h1>
+   
+   <Carrusel></Carrusel>
 
     </>
   )
