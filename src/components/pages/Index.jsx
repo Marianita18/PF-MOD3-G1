@@ -7,9 +7,9 @@ export default function Index() {
   return(
     <>
     <main className="main">
+      <h1>este es un index</h1>
     <Carrusel></Carrusel>
     <Infoindex></Infoindex>
-    
     <Restaurantee></Restaurantee>
     <Testimonios></Testimonios>
     </main>
