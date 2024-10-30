@@ -1,8 +1,9 @@
-import { Reservas } from "./reserva/reserva"
+
+import { Carrusel } from "../componentesIndex/Carrusel"
 export default function Index() {
   return (
     <>
-   <h1>index Rama Index para ber si funciona el deply</h1>
+      <Carrusel></Carrusel>
 
     </>
   )
