@@ -1,0 +1,44 @@
+.foto {
+  width: 90%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 95%;
+  transition: 0.5s ease;
+}
+.foto img:hover {
+  width: 100%;
+  opacity: 100%;
+  filter: contrast(120%);
+}
+
+.fondo {
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/09/06/30/pool-2128578_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+
+@media all and (min-width: 576px) {
+  .fondo {
+    height: 150px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .fondo {
+    height: 200px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .fondo {
+    height: 300px;
+  }
+}
+
+.Informacion{
+ background-image: url(https://www.cal-llop.com/wp-content/uploads/fondo-Hotel-Cal-Llop-Priorat-5.jpg);
+ margin: 0;
+}
