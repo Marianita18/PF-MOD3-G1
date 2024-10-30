@@ -1,5 +1,10 @@
 
 export default function Index() {
-  return <div>Index</div>;
+  return (
+      <>
+  <h1>Rama Index </h1>
+  </>
+  )
+
 }
 
