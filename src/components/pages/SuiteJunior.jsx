@@ -32,9 +32,10 @@ export default function SuiteJunior() {
       console.log(error);
     }
   };
+
   return (
     <div className="Informacion">
-      <body className="container Informacion">
+      <div className="container Informacion">
         <div className="d-flex justify-content-around align-items-center mt-3 bg-info-subtle text-center py-3">
           <h3 className="fs-1 text-center">Suite Junior</h3>
         </div>
@@ -86,9 +87,9 @@ export default function SuiteJunior() {
             tipo={el.tipo}
             numero={el.numero}
             info={
-              "Nuestra Habitación Junior está pensada para brindarte una experiencia superior, ideal para relajarte, trabajar o disfrutar de una escapada romántica.Algunas de nuestras Habitaciones Junior cuentan con ventanas amplias que enmarcan vistas al paisaje urbano o al jardín del hotel, "
+              "Nuestra Habitación Junior está pensada para brindarte una experiencia superior, ideal para relajarte, trabajar o disfrutar de una escapada romántica. Algunas de nuestras Habitaciones Junior cuentan con ventanas amplias que enmarcan vistas al paisaje urbano o al jardín del hotel."
             }
-          ></Reservas>
+          />
         ))}
 
         <Container>
@@ -98,20 +99,17 @@ export default function SuiteJunior() {
         </Container>
         <ListGroup className="mt-4">
           <ListGroup.Item>
-            Juegos de mesa y consolas de videojuegos para que no te aburras
-            nunca
+            Juegos de mesa y consolas de videojuegos para que no te aburras nunca
           </ListGroup.Item>
           <ListGroup.Item>
-            Un balcón con vistas increíbles para relajarte y disfrutar del aire
-            fresco
+            Un balcón con vistas increíbles para relajarte y disfrutar del aire fresco
           </ListGroup.Item>
           <ListGroup.Item>
-            Decoración moderna y colorida para crear un ambiente divertido y
-            juvenil
+            Decoración moderna y colorida para crear un ambiente divertido y juvenil
           </ListGroup.Item>
           <ListGroup.Item>Conexión de Wifi</ListGroup.Item>
         </ListGroup>
-      </body>
+      </div>
     </div>
   );
 }
