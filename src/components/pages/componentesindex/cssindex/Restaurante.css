@@ -1,232 +1,207 @@
-.plato{
-    width: auto ;
-    height: 700px;
-    margin: 50px auto;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
+.plato {
+  width: auto;
+  height: 700px;
+  margin: 50px auto;
 }
-.img{
-    height: 350px ;
-    width: 450px;
-    border-radius: 15px;
-    border: solid 3px rgb(66, 66, 65);
-    
-   
-
-
+.img {
+  height: 350px;
+  width: 450px;
+  border-radius: 15px;
+  border: solid 3px rgb(66, 66, 65);
 }
-.comida{
-    margin: 100px;
+.comida {
+  margin: 100px;
 }
-.plato-dormitorio{
-    width: 600px ;
-    height: 700px;
-    margin: 60px 0px;
-
-
+.plato-dormitorio {
+  width: 600px;
+  height: 700px;
+  margin: 60px 0px;
 }
-.dormitorios{
-    width: 100%;
+.dormitorios {
+  width: 100%;
 }
-.sectionrestaurante{
-    margin: 10px;
+.sectionrestaurante {
+  margin: 10px;
 }
-.div-restaurante{
-    margin: 0px 70px;
-    text-align: start;
+.div-restaurante {
+  margin: 0px 70px;
+  text-align: start;
 }
-li{
-   
-    font-family: sans-serif;
-    font-weight: 500;
-    margin: 10px;
-    font-optical-sizing: auto;
-    font-size: 1.2rem; /* Usa 'rem' en lugar de 'px' para mayor flexibilidad */
-    font-style: normal;
-
+li {
+  font-weight: 500;
+  margin: 10px;
+  font-optical-sizing: auto;
+  font-size: 1.2rem; /* Usa 'rem' en lugar de 'px' para mayor flexibilidad */
+  font-style: normal;
 }
-.titulo-restaurante{
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    margin: 5px;
-    font-size: 2rem;
+.titulo-restaurante {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 5px;
+  font-size: 2rem;
 }
 .source-code-pro {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
- 
-    font-style: normal;
-  }
-  
+  font-optical-sizing: auto;
 
-
-.restaurante{
-    width: 1300px;
-    height: 700px;
-    /* margin: -500px 100px; */
-    display: flex;
-    
-    /* justify-content: space-around; */
-    /* border: solid 3px rgb(99, 99, 96); */
-}
-.imgrestaurante{
-    border-radius: 20px;
-    width: 1200px;
-    height: 600px;
-    margin: 10px 100px;
-    border-radius: 20px;
-
-   
-}
-.imgdescanso{
-    margin: 100px;
-}
-.restaurante{
-    margin: -100px;
-    text-align: center;
-}
-.parrafo-restaurante{
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-        font-size: 23px;
-        font-weight: 500;
-        margin: 5px;
-    font-style: normal;  
-}
-.imgrestaurante{
-    width: 600px;
-    height: 400px;
-    /* margin: 0px auto; */
-
+  font-style: normal;
 }
 
-.img-dormitorio{
-    height: 650px ;
-    width: 550px;
-    border-radius: 15px;
-    position: relative;
-    transition: transform 0.3s ease, z-index 0.3s ease;
+.restaurante {
+  width: 1300px;
+  height: 700px;
+  /* margin: -500px 100px; */
+  display: flex;
 
+  /* justify-content: space-around; */
+  /* border: solid 3px rgb(99, 99, 96); */
+}
+.imgrestaurante {
+  border-radius: 20px;
+  width: 1200px;
+  height: 600px;
+  margin: 10px 100px;
+  border-radius: 20px;
+}
+.imgdescanso {
+  margin: 100px;
+}
+.restaurante {
+  margin: -100px;
+  text-align: center;
+}
+.parrafo-restaurante {
+  font-optical-sizing: auto;
+  font-size: 23px;
+  font-weight: 500;
+  margin: 5px;
+  font-style: normal;
+}
+.imgrestaurante {
+  width: 600px;
+  height: 400px;
+  /* margin: 0px auto; */
 }
 
-.titlesazon{
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-        font-size: 60px;
-        margin: 30px;
-    font-style: normal;
+.img-dormitorio {
+  height: 650px;
+  width: 550px;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
 }
-.dormitorios{
-    margin: 100px;
+
+.titlesazon {
+  font-optical-sizing: auto;
+  font-size: 60px;
+  margin: 30px;
+  font-style: normal;
 }
-@media(max-width:500px){
-    .imgrestaurante{
-        width: 100%;
-    }
-    .img-dormitorio{
-        width:100%;
-        margin: 100px 100px;
-        
-    }
-    .dormitorios{
-        margin:  auto;
-    }
-    .plato{
-        margin: 0px auto;
-    }
-    .plato-dormitorio{
-      width: 100%;
-      height: auto;
-    }
+.dormitorios {
+  margin: 100px;
 }
-@media(max-width:700px){
-   .img{
+@media (max-width: 500px) {
+  .imgrestaurante {
     width: 100%;
-
-   }
-   .titlesazon{
+  }
+  .img-dormitorio {
+    width: 100%;
+    margin: 100px 100px;
+  }
+  .dormitorios {
+    margin: auto;
+  }
+  .plato {
+    margin: 0px auto;
+  }
+  .plato-dormitorio {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .img {
+    width: 100%;
+  }
+  .titlesazon {
     font-size: 38px;
-   }
-  .li{
+  }
+  .li {
     font-size: 25px;
   }
   /* .comida{
     /* margin: 100px; */
-  
-  .dormitorios{
-    margin:  20px auto;
-    
+
+  .dormitorios {
+    margin: 20px auto;
   }
-  .img-dormitorio{
+  .img-dormitorio {
     width: 100%;
     height: auto;
-  
-  
   }
   /* .img-dormitorio:hover{
     width:500px;
     height: 800px;
   } */
-    /* .plato{
+  /* .plato{
         width: 100%;
        height: auto;
        
     } */
-     .imgrestaurante{
-        margin: 0px auto;
-     }
+  .imgrestaurante {
+    margin: 0px auto;
+  }
 }
 @media (max-width: 1000px) {
-    .imgrestaurante{
-        width: 100%;
-    }
-    .img-dormitorio{
-        margin: 0px auto;
-    }
+  .imgrestaurante {
+    width: 100%;
+  }
+  .img-dormitorio {
+    margin: 0px auto;
+  }
 }
 @media (max-width: 1400px) {
-   .titlesazon{
+  .titlesazon {
     font-size: 45px;
-   }
-   .parrafo-restaurante{
+  }
+  .parrafo-restaurante {
     font-size: 24px;
-   }
-    .img-dormitorio{
-       width: 100%;
-       height: 410px;
-       margin: 0px 1px;
-       border: solid rgb(80, 79, 79) 2px;
-      
-    }
-    .dormitorios{
-        width: auto;
-        height: auto; 
-        margin: 10px 5px;
-    }
-    .img{
-        height: 340px;
-    }
-    .titlesazon{
-        font-size: 40px;
-    }
-    .parrafo-restaurante{
-        font-size: 18px;
-    }
-    .comida{
-        margin: 10px;
-    }
-    .sectionrestaurante{
-        margin: -200px;
-    }
-    .imgrestaurante{
-        margin: 0px -5px;
-    }
-    .titulo-restaurante{
-        font-size: 20px;
-    }
-    li{
-        font-size: 16px;
-    }
+  }
+  .img-dormitorio {
+    width: 100%;
+    height: 410px;
+    margin: 0px 1px;
+    border: solid rgb(80, 79, 79) 2px;
+  }
+  .dormitorios {
+    width: auto;
+    height: auto;
+    margin: 10px 5px;
+  }
+  .img {
+    height: 340px;
+  }
+  .titlesazon {
+    font-size: 40px;
+  }
+  .parrafo-restaurante {
+    font-size: 18px;
+  }
+  .comida {
+    margin: 10px;
+  }
+  .sectionrestaurante {
+    margin: -200px;
+  }
+  .imgrestaurante {
+    margin: 0px -5px;
+  }
+  .titulo-restaurante {
+    font-size: 20px;
+  }
+  li {
+    font-size: 16px;
+  }
 }

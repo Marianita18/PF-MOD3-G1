@@ -1,6 +1,6 @@
 export const URLUsuarios = import.meta.env.VITE_API_USUARIOS;
 export const URLHabitaciones = import.meta.env.VITE_API_HABITACIONES;
-export const URLReservas=import.meta.env.VITE_API_RESERVAS
+export const URLReservas = import.meta.env.VITE_API_RESERVAS;
 
 export const crearUsuario = async (usuarioNuevo) => {
   try {
@@ -17,61 +17,6 @@ export const crearUsuario = async (usuarioNuevo) => {
     return false;
   }
 };
-// !REservas
-export const mostrarReserva=async ()=>{
-  try{
-    const respuesta = await fetch(URLReservas);
-    return respuesta;
-  }catch(error){
-    console.log(error)
-  }
-}
- export const crearReserva=async(Reservanueva)=>{
-  try{
-    const respuesta = await fetch(URLReservas, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(Reservanueva),
-    });
-    return respuesta;
-  }catch(error){
-    console.log(error)
-  }
- }
-
-export const Reserva =async(id)=>{
-  try{
-   const respuesta =await fetch(`${URLHabitaciones}/${id}`, {
-  method: "PATCH",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ reserva: true })});
-  return respuesta
-  }catch(error){
-   console.log(error)
-   return false
-  }
-
-
-
-}
-export const ReservaCanselada=async(id)=>{
-  try{
-    const respuesta =await fetch(`${URLHabitaciones}/${id}`, {
-   method: "PATCH",
-   headers: {
-     "Content-Type": "application/json",
-   },
-   body: JSON.stringify({ reserva: false })});
-   return respuesta
-   }catch(error){
-    console.log(error)
-    return false
-   }
-}
 
 export const leerUsuarios = async () => {
   try {
@@ -181,6 +126,62 @@ export const editarHabitacion = async (habitacionEditada, id) => {
     return respuestaHabitacion;
   } catch (error) {
     console.error(error);
+    return false;
+  }
+};
+
+export const mostrarReserva = async () => {
+  try {
+    const respuesta = await fetch(URLReservas);
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const crearReserva = async (Reservanueva) => {
+  try {
+    const respuesta = await fetch(URLReservas, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(Reservanueva),
+    });
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const Reserva = async (id) => {
+  try {
+    const respuesta = await fetch(`${URLHabitaciones}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ reserva: true }),
+    });
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+};
+
+export const ReservaCancelada = async (id) => {
+  try {
+    const respuesta = await fetch(`${URLHabitaciones}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ reserva: false }),
+    });
+    return respuesta;
+  } catch (error) {
+    console.log(error);
     return false;
   }
 };

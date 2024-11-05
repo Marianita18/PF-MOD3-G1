@@ -1,6 +1,6 @@
 import ItemFoto from "./componentesfacu/ItemFoto";
+import { useState } from "react";
 import "./componentesfacu/Galeria.css"
-import React, { useState } from "react";
 
 const GaleriaImagen = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);

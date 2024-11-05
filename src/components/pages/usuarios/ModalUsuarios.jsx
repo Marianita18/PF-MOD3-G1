@@ -3,10 +3,10 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
-import Swal from "sweetalert2";
 import { obtenerUsuarios, editarUsuario } from "../../../helpers/queries";
+import Swal from "sweetalert2";
 
-const ModalUsuarios = ({ show, handleClose, estoyCreando, id}) => {
+const ModalUsuarios = ({ show, handleClose, estoyCreando, id }) => {
   const {
     register,
     handleSubmit,
@@ -54,7 +54,9 @@ const ModalUsuarios = ({ show, handleClose, estoyCreando, id}) => {
   return (
     <Modal show={show} onHide={handleClose} className="Informacion">
       <Modal.Header closeButton>
-        <Modal.Title>{estoyCreando ? "Nueva Habitación" : "Editar Usuario"}</Modal.Title>
+        <Modal.Title>
+          {estoyCreando ? "Nueva Habitación" : "Editar Usuario"}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form onSubmit={handleSubmit(usuarioValidado)}>

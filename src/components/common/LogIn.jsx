@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles/navbar.css";
 import { Modal, Button, Form, Col, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";

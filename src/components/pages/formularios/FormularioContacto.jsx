@@ -1,9 +1,8 @@
-import React from "react";
-import { Form, Button } from "react-bootstrap";
-import "../styles/seccionContacto.css";
+import { Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
 import { NavLink } from "react-router-dom";
+import Swal from "sweetalert2";
+import "../styles/seccionContacto.css";
 
 const FormularioContacto = () => {
   const {
@@ -22,7 +21,7 @@ const FormularioContacto = () => {
   };
 
   return (
-    <Form className="" onSubmit={handleSubmit(consultaValidada)}>
+    <Form className="my-3 py-3" onSubmit={handleSubmit(consultaValidada)}>
       <Form.Group className="mb-3" controlId="formNombre">
         <Form.Label className="fw-bold">Nombre:</Form.Label>
         <Form.Control
@@ -81,7 +80,11 @@ const FormularioContacto = () => {
         </Form.Text>
       </Form.Group>
       <div className="text-center">
-        <NavLink type="submit" className="btn text-end botonFormularioContacto" to="/*">
+        <NavLink
+          type="submit"
+          className="btn text-end botonFormularioContacto"
+          to="/*"
+        >
           Enviar Consulta
         </NavLink>
       </div>

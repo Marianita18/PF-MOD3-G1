@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
-import "../pages/styles/seccionContacto.css";
 import FormularioContacto from "./formularios/FormularioContacto";
+import "../pages/styles/seccionContacto.css";
 
 export default function Contacto() {
   return (
@@ -12,7 +12,7 @@ export default function Contacto() {
           className="bannerContactoImg"
         />
         <Container className="text-center overlay">
-          <h1 className="tituloSeccionContacto">Contacto</h1>
+          <h2 className="tituloSeccionContacto">Contacto</h2>
         </Container>
       </div>
       <section className="container-fluid  seccionContactoInfo p-3">
@@ -20,8 +20,8 @@ export default function Contacto() {
           <div className="col-md-6 my-5">
             <h3>Hotel Oasis Urbano </h3>
             <p className="lead">
-              <i className="bi bi-geo-alt"></i> Av. General Paz 576, Piso 9 Oficina
-              2, Tucumán, Argentina.
+              <i className="bi bi-geo-alt"></i> Av. General Paz 576, Piso 9
+              Oficina 2, Tucumán, Argentina.
             </p>
             <hr />
             <p>
@@ -56,7 +56,8 @@ export default function Contacto() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1060679493985!2d-65.20974192366222!3d-26.83657849002869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1717700548290!5m2!1ses-419!2sar"
           height="400"
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"></iframe>
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
   );
