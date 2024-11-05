@@ -1,4 +1,4 @@
-import Index from "./components/pages";
+import Index from "./components/pages/Index.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import GaleriaImagen from "./components/pages/GaleriaImagen";
@@ -12,11 +12,7 @@ import Error404 from "./components/pages/Error404";
 import Footer from "./components/common/Footer";
 import Registro from "./components/common/Registro";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MisReservas } from "./components/pages/MisReservas";
 import "./App.css";
-import Administrador from "./components/pages/Administrador";
-import ModalUsuarios from "./components/pages/usuarios/ModalUsuarios";
-import ModalHabitacion from "./components/pages/habitaciones/ModalHabitacion";
 import RutasProtegidas from "./routes/RutasProtegidas";
 import RutasAdmin from "./routes/RutasAdmin";
 import LogIn from "./components/common/LogIn";
@@ -58,12 +54,28 @@ function App() {
           element={<CatalogoHabitacion></CatalogoHabitacion>}
         ></Route>
         <Route
-          path="/suiteStandard"
-          element={<SuiteStandard></SuiteStandard>}
+          path="/suiteStandard/*"
+          element={
+            <RutasProtegidasUsuario>
+              <SuiteStandard />
+            </RutasProtegidasUsuario>
+          }
         ></Route>
         <Route
-          path="/suiteJunior"
-          element={<SuiteJunior></SuiteJunior>}
+          path="/suiteJunior/*"
+          element={
+            <RutasProtegidasUsuario>
+              <SuiteJunior />
+            </RutasProtegidasUsuario>
+          }
+        ></Route>
+        <Route
+          path="/suitePremiun/*"
+          element={
+            <RutasProtegidasUsuario>
+              <SuitePremiun />
+            </RutasProtegidasUsuario>
+          }
         ></Route>
         <Route
           path="/reservas/*"
@@ -72,10 +84,6 @@ function App() {
               <RutasUsuario></RutasUsuario>
             </RutasProtegidasUsuario>
           }
-        ></Route>
-        <Route
-          path="/suitePremiun"
-          element={<SuitePremiun></SuitePremiun>}
         ></Route>
         <Route path="/contacto" element={<Contacto></Contacto>}></Route>
         <Route

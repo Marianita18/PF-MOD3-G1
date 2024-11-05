@@ -1,5 +1,4 @@
 import "./styles/footer.css";
-import Button from "react-bootstrap/Button";
 import Logo from "../../assets/imgCommon/imgFooter/Logo.png";
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';

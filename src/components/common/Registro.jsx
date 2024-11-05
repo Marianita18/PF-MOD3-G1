@@ -2,10 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
-import "./styles/navbar.css";
 import { useEffect } from "react";
-import Swal from "sweetalert2";
 import { crearUsuario, obtenerUsuarios } from "../../helpers/queries";
+import Swal from "sweetalert2";
+import "./styles/navbar.css";
 
 const Registro = ({ estoyCreando }) => {
   const {

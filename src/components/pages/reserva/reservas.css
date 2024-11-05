@@ -1,361 +1,342 @@
-.habitacion{
-    display: flex;
-    width: 1200px;
-    height: auto;
-     border-radius: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.habitacion {
+  display: flex;
+  width: 1200px;
+  height: auto;
+  border-radius: 20px;
   border: solid 1px rgb(141, 140, 140);
-  box-shadow: 1px 1px 1px 1px  rgb(90, 90, 89);
+  box-shadow: 1px 1px 1px 1px rgb(90, 90, 89);
   margin: 40px auto;
-  
 }
-.box-reserva{
-    height: 300px;
-    width: 400px;
-}
-
-.susReservas{
-    
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    border: solid 2px rgb(110, 109, 109);
-    height: 550px;
-    margin: 10px 5px;
-    border-radius: 20px;
-      
-}
-.reservado{
-    color: red;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 20px;
-}
-.susReservas:hover{
-box-shadow: 2px 3px 3px gray;
-}
-.imgsureserva{
-    width:400px;
-    height:250px;
- 
-   
-}
-.no-reservas{
-    margin: 100px;
-    font-family: sans-serif;
-    font-weight: bold;
+.box-reserva {
+  height: 300px;
+  width: 400px;
 }
 
-.misreservas{
-    display: flex;
- justify-content: space-around;
- /* height: 2000px; */
- /* width: 2000; */
- width: auto;
- height: auto;
- flex-wrap: wrap;
+.susReservas {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: solid 2px rgb(110, 109, 109);
+  height: 550px;
+  margin: 10px 5px;
+  border-radius: 20px;
+}
+.reservado {
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 20px;
+}
+.susReservas:hover {
+  box-shadow: 2px 3px 3px gray;
+}
+.imgsureserva {
+  width: 400px;
+  height: 250px;
+}
+.no-reservas {
+  margin: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.misreservas {
+  display: flex;
+  justify-content: space-around;
+  /* height: 2000px; */
+  /* width: 2000; */
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
 }
 /* .box-reserva{
     /* width: 500px ;
     /* border: solid 3px black; */
-    /* margin: 0px 20px; */
- 
+/* margin: 0px 20px; */
 
-
-.title-reserva{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    color: rgb(9, 36, 71);
-    font-style: normal;
-   margin: 10px;
-    font-size: 40px;
-    font-weight: 700;
-   
+.title-reserva {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  color: rgb(9, 36, 71);
+  font-style: normal;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.habitacion:hover{
-    box-shadow :2px 3px 3px 2px  rgb(90, 90, 89);
+.habitacion:hover {
+  box-shadow: 2px 3px 3px 2px rgb(90, 90, 89);
 }
-.reservado{
-    text-align: center;
-    color: rgb(10, 9, 9);
-    background-color: red;
-    border-radius: 20px;
-    margin: 10px;
-    width: 100px;
-    padding: 10px 5px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: rgb(255, 253, 250);
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-  
-    font-style: normal;
-}
-.restricion{
-    color: rgb(207, 129, 129);
-    font-family: sans-serif;
-    font-weight: bold;
-}
-.no-reservado{
-   text-align: center;
-    background-color: rgb(47, 100, 31);
-    border-radius: 20px;
-    margin: 10px;
-    width: 150px;
-    padding: 10px 5px;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
+.reservado {
+  text-align: center;
+  color: rgb(10, 9, 9);
+  background-color: red;
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  padding: 10px 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(255, 253, 250);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
 
-    font-style: normal;
-    color: rgb(255, 253, 250);
+  font-style: normal;
 }
-.box{ 
-  
-    width: 500px ;
-    /* border: solid 3px black; */
-    /* margin: 0px 20px; */
-    height: 300px;
-    
-   
+.restricion {
+  color: rgb(207, 129, 129);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.no-reservado {
+  text-align: center;
+  background-color: rgb(47, 100, 31);
+  border-radius: 20px;
+  margin: 10px;
+  width: 150px;
+  padding: 10px 5px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  color: rgb(255, 253, 250);
+}
+.box {
+  width: 500px;
+  /* border: solid 3px black; */
+  /* margin: 0px 20px; */
+  height: 300px;
 }
 
-.img-reserva{
-    width: 350px;
-    height: 300px;
-    border-radius: 20px;
+.img-reserva {
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
 }
-.fecha{
-    font-weight: bold;
-    color: rgb(141, 28, 28);
+.fecha {
+  font-weight: bold;
+  color: rgb(141, 28, 28);
 }
 
-.pc{
-    font-family: "Nunito", sans-serif;
+.pc {
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
 }
-.title{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    color: rgb(30, 81, 148);
-    font-style: normal;
-    margin: 10px;
-    font-size: 40px;
+.title {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  color: rgb(30, 81, 148);
+  font-style: normal;
+  margin: 10px;
+  font-size: 40px;
 }
-.precio{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    color: rgb(18, 47, 100);
-    font-style: normal;
-    font-size: 40px;
-    margin: 30px;
+.precio {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  color: rgb(18, 47, 100);
+  font-style: normal;
+  font-size: 40px;
+  margin: 30px;
 }
-.oferta{
-    border: none;
-    background-color: rgb(240, 173, 30);
-    padding: 10px 8px;
-    /* border: solid 2px rgb(141, 138, 138); */
-    width: 300px;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 20px;
-    margin: 20px;
+.oferta {
+  border: none;
+  background-color: rgb(240, 173, 30);
+  padding: 10px 8px;
+  /* border: solid 2px rgb(141, 138, 138); */
+  width: 300px;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 20px;
 }
-.ph{
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: <weight>; */
-    font-size: 17px;
-    font-style: normal;
+.ph {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-size: 17px;
+  font-style: normal;
 }
 @media (max-width: 1330px) {
-    .habitacion{
+  .habitacion {
     flex-direction: row; /* Apila los elementos verticalmente */
     margin: 10px 200px;
-    
+
     width: auto;
     height: auto;
-
-
-   
-}
-.box{
+  }
+  .box {
     height: auto;
-}
-.img-reserva{
-width: auto;
-height: 250px;
-}
-.title{
+  }
+  .img-reserva {
+    width: auto;
+    height: 250px;
+  }
+  .title {
     font-size: 2vh;
-}
-.oferta{
+  }
+  .oferta {
     width: 170px;
-    height:50px ;
+    height: 50px;
     margin: -20px;
-}
-
+  }
 }
 @media (max-width: 1000px) {
-    .habitacion{
+  .habitacion {
     flex-direction: row; /* Apila los elementos verticalmente */
     margin: 20px auto;
     padding: 10px;
     width: auto;
     height: auto;
-    
-
-   
-}
-.box{
+  }
+  .box {
     height: auto;
-}
-.img-reserva{
-width: 240px;
-height: 250px;
-}
-.title{
+  }
+  .img-reserva {
+    width: 240px;
+    height: 250px;
+  }
+  .title {
     font-size: 2vh;
-}
-.oferta{
+  }
+  .oferta {
     width: 170px;
-    height:50px ;
+    height: 50px;
     margin: -20px;
-}
-.reservado{
+  }
+  .reservado {
     margin: 1px;
-}
-.no-reservado{
+  }
+  .no-reservado {
     margin: 1px;
-}
+  }
 }
 @media (max-width: 768px) {
-    .habitacion{
-        flex-direction: row; /* Apila los elementos verticalmente */
-        margin: 20px auto;
-        padding: 10px;
-        width: auto;
-        height: auto;
-    
-       
-    }
-    .precio{
-        font-size: 30px;
-        margin: 0px;
-    }
-    .restricion{
-        font-size: 12px;
-    }
-    .ph{
-        font-size: 15px;
-    }
-    .box{
-        height: auto;
-        font-size: 1vh;
-    }
-    .img-reserva{
+  .habitacion {
+    flex-direction: row; /* Apila los elementos verticalmente */
+    margin: 20px auto;
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .precio {
+    font-size: 30px;
+    margin: 0px;
+  }
+  .restricion {
+    font-size: 12px;
+  }
+  .ph {
+    font-size: 15px;
+  }
+  .box {
+    height: auto;
+    font-size: 1vh;
+  }
+  .img-reserva {
     width: 370px;
     height: 250px;
     margin: 0px auto;
-    }
-    
-    .title{
-        font-size: 23px;
-    }
-    .oferta{
-        width: 80px;
-        height:40px ;
-        /* margin: -20px; */
-        font-size: 12px;
-        font-family: sans-serif
-    }
-    .solicitar{
-        height: auto;
-        font-size: 10px;
-        margin: 0px;
-    }
-    .canselar{
-        height: auto;
-        font-size: 10px;
-        margin: 0px;
-    }
-    .no-reservado{
-        width: 70px;
-        padding: 6px;
-        margin: 0px;
-        font-size: 8px;
-    }
-    .reservado{
-        width: 70px;
-        padding: 6px;
-        margin: 0px;
-        font-size: 8px;
-    }
+  }
+
+  .title {
+    font-size: 23px;
+  }
+  .oferta {
+    width: 80px;
+    height: 40px;
+    /* margin: -20px; */
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+  .solicitar {
+    height: auto;
+    font-size: 10px;
+    margin: 0px;
+  }
+  .canselar {
+    height: auto;
+    font-size: 10px;
+    margin: 0px;
+  }
+  .no-reservado {
+    width: 70px;
+    padding: 6px;
+    margin: 0px;
+    font-size: 8px;
+  }
+  .reservado {
+    width: 70px;
+    padding: 6px;
+    margin: 0px;
+    font-size: 8px;
+  }
 }
 @media (max-width: 500px) {
-    .habitacion{
+  .habitacion {
     flex-direction: row; /* Apila los elementos verticalmente */
     margin: 20px auto;
     padding: 10px;
     width: auto;
     height: auto;
     flex-wrap: wrap;
-   
-}
-.precio{
+  }
+  .precio {
     font-size: 30px;
     margin: 0px;
-}
-.restricion{
+  }
+  .restricion {
     font-size: 12px;
-}
-.ph{
+  }
+  .ph {
     font-size: 15px;
-}
-.box{
+  }
+  .box {
     height: auto;
     font-size: 1vh;
-}
-.img-reserva{
-width: 370px;
-height: 250px;
-margin: 0px auto;
-}
+  }
+  .img-reserva {
+    width: 370px;
+    height: 250px;
+    margin: 0px auto;
+  }
 
-.title{
+  .title {
     font-size: 23px;
-}
-.oferta{
+  }
+  .oferta {
     width: 80px;
-    height:40px ;
+    height: 40px;
     /* margin: -20px; */
     font-size: 12px;
-    font-family: sans-serif
-}
-.solicitar{
+    font-family: sans-serif;
+  }
+  .solicitar {
     height: auto;
     font-size: 10px;
     margin: 0px;
-}
-.canselar{
+  }
+  .canselar {
     height: auto;
     font-size: 10px;
     margin: 0px;
-}
-.no-reservado{
+  }
+  .no-reservado {
     width: 70px;
     padding: 6px;
     margin: 0px;
     font-size: 8px;
-}
-.reservado{
+  }
+  .reservado {
     width: 70px;
     padding: 6px;
     margin: 0px;
     font-size: 8px;
-}
+  }
 }

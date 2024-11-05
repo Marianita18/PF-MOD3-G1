@@ -1,21 +1,22 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from 'react-bootstrap/Image';
-import "../estilos/nosotros.css";
+import Image from "react-bootstrap/Image";
 import banner1 from "../imgNosotros/banner1.jpg";
 import banner2 from "../imgNosotros/banner2.jpg";
-import julian from "../imgNosotros/julian.jpeg"
-import facu from "../imgNosotros/facu.jpeg"
-import victoria from "../imgNosotros/victoria.jpeg"
-import mariana from "../imgNosotros/mariana.jpeg"
-import eugenia from "../imgNosotros/eugenia.jpeg"
-import isaias from "../imgNosotros/isaias.jpeg"
+import julian from "../imgNosotros/julian.jpeg";
+import facu from "../imgNosotros/facu.jpeg";
+import victoria from "../imgNosotros/victoria.jpeg";
+import mariana from "../imgNosotros/mariana.jpeg";
+import eugenia from "../imgNosotros/eugenia.jpeg";
+import isaias from "../imgNosotros/isaias.jpeg";
+import "../estilos/nosotros.css";
 
 const SobreNosotros = () => {
   return (
     <div className="Informacion">
       <section className="mb-3 py-md-5 py-sm-2 container-fluid fondoNosotros">
-        <h3 className="fs-2 text-center text-white container mt-4 pt-4">Sobre Nosotros</h3>
+        <h3 className="fs-2 text-center text-white container mt-4 pt-4">
+          Sobre Nosotros
+        </h3>
       </section>
 
       <section className="container-fluid text-center bg-s1-nosotros my-4 py-4">
@@ -55,35 +56,47 @@ const SobreNosotros = () => {
           </div>
         </div>
       </section>
-      <section className='container-fluid text-center bg-s3-nosotros px-5'>
-            <h2 className='fw-bold pt-1'>FUNDADORES</h2>
-            <div className='row'>
-               <div className='col-sm-12 col-lg-2'>
-                <div><Image src={julian} roundedCircle className="w-100"/></div>
-                <h5>Julian Garay</h5>
-               </div>
-               <div className='col-sm-12 col-lg-2'>
-               <div><Image src={facu} roundedCircle className="w-100"/></div>
-               <h5>Facundo Martinez</h5>
-               </div>
-               <div className='col-sm-12 col-lg-2'>
-               <div><Image src={mariana} roundedCircle className="w-100"/></div>
-               <h5>Mariana Mendoza</h5>
-               </div>
-               <div className='col-sm-12 col-lg-2'>
-               <div><Image src={isaias} roundedCircle className="w-100"/></div>
-               <h5>Ismael Vargas</h5>
-               </div>
-               <div className='col-sm-12 col-lg-2'>
-               <div><Image src={eugenia} roundedCircle className="w-100"/></div>
-               <h5>Eugenia Sansierra</h5>
-               </div>
-               <div className='col-sm-12 col-lg-2'>
-               <div><Image src={victoria} roundedCircle className="w-100"/></div>
-               <h5>Victoria Gramajo</h5>
-               </div>
+      <section className="container-fluid text-center bg-s3-nosotros px-5">
+        <h2 className="fw-bold pt-1">FUNDADORES</h2>
+        <div className="row">
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={julian} roundedCircle className="w-100" />
             </div>
-        </section>
+            <h5>Julian Garay</h5>
+          </div>
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={facu} roundedCircle className="w-100" />
+            </div>
+            <h5>Facundo Martinez</h5>
+          </div>
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={mariana} roundedCircle className="w-100" />
+            </div>
+            <h5>Mariana Mendoza</h5>
+          </div>
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={isaias} roundedCircle className="w-100" />
+            </div>
+            <h5>Ismael Vargas</h5>
+          </div>
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={eugenia} roundedCircle className="w-100" />
+            </div>
+            <h5>Eugenia Sansierra</h5>
+          </div>
+          <div className="col-sm-12 col-lg-2">
+            <div>
+              <Image src={victoria} roundedCircle className="w-100" />
+            </div>
+            <h5>Victoria Gramajo</h5>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

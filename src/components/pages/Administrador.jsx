@@ -5,38 +5,40 @@ import ItemHabitacion from "./habitaciones/ItemHabitacion";
 import ModalHabitacion from "./habitaciones/ModalHabitacion";
 import ItemUsuario from "./usuarios/ItemUsuario";
 import { Huespedes } from "../Huespedes/Huespedes";
-import { leerUsuarios, leerHabitaciones,mostrarReserva} from "../../helpers/queries";
+import {
+  leerUsuarios,
+  leerHabitaciones,
+  mostrarReserva,
+} from "../../helpers/queries";
 import Swal from "sweetalert2";
 
 const Administrador = () => {
   const [habitaciones, setHabitaciones] = useState([]);
   const [usuarios, setUsuarios] = useState([]);
-  const [reserva,setReserva]=useState([])
+  const [reserva, setReserva] = useState([]);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     obtenerHabitaciones();
     tablaUsuarios();
-    tablaUsuariosReservas()
+    tablaUsuariosReservas();
   }, []);
 
-
-  const tablaUsuariosReservas=async()=>{
-    try{
-   const respuesta=await mostrarReserva()
-   if(respuesta.status===200){
-    const datosreserva=await respuesta.json()
-    setReserva(datosreserva)
-    
-   }
-    }catch(error){
+  const tablaUsuariosReservas = async () => {
+    try {
+      const respuesta = await mostrarReserva();
+      if (respuesta.status === 200) {
+        const datosreserva = await respuesta.json();
+        setReserva(datosreserva);
+      }
+    } catch (error) {
       Swal.fire({
         title: "Ocurrio un error",
         text: `No se pudo obtener el listado de Huespedes.`,
         icon: "error",
       });
     }
-  }
+  };
 
   const tablaUsuarios = async () => {
     try {
@@ -58,21 +60,20 @@ const Administrador = () => {
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
-  
 
   const obtenerHabitaciones = async () => {
     const respuesta = await leerHabitaciones();
-    if (respuesta.status===200){
-     const datos = await respuesta.json();
-     setHabitaciones(datos);
-      }else{
-       Swal.fire({
-         title: "Ocurrió un error",
-         text: "No se pudo obtener las habitaciones",
-         icon: "error"
-       });
-      }
-   }
+    if (respuesta.status === 200) {
+      const datos = await respuesta.json();
+      setHabitaciones(datos);
+    } else {
+      Swal.fire({
+        title: "Ocurrió un error",
+        text: "No se pudo obtener las habitaciones",
+        icon: "error",
+      });
+    }
+  };
 
   return (
     <div className="Informacion">
@@ -110,7 +111,12 @@ const Administrador = () => {
         </tbody>
       </Table>
 
-      <ModalHabitacion show={show} handleClose={handleClose} setHabitaciones={setHabitaciones} estoyCreandoHabitacion={true}/>
+      <ModalHabitacion
+        show={show}
+        handleClose={handleClose}
+        setHabitaciones={setHabitaciones}
+        estoyCreandoHabitacion={true}
+      />
 
       <section className="container">
         <div className="d-flex justify-content-between my-3 py-2 mt-4 pt-4">
@@ -146,20 +152,22 @@ const Administrador = () => {
       <Table striped responsive bordered className="container">
         <thead className="bg-primary">
           <tr>
- 
             <th>Habitacion</th>
             <th>Nombre</th>
             <th>Pagos</th>
             <th>Fechas Reservadas</th>
-           
           </tr>
         </thead>
         <tbody>
-        {
-          reserva.map((el)=>
-            <Huespedes id={el.id} precio={el.precio} nombre={el.nombreCompleto} fecha={el.fecha} tipo={el.tipo}></Huespedes>
-          )
-        }
+          {reserva.map((el) => (
+            <Huespedes
+              id={el.id}
+              precio={el.precio}
+              nombre={el.nombreCompleto}
+              fecha={el.fecha}
+              tipo={el.tipo}
+            ></Huespedes>
+          ))}
         </tbody>
       </Table>
     </div>

@@ -2,16 +2,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/imgCommon/imgNavbar/Logo.png";
-import "./styles/navbar.css";
-import { useState } from "react";
 import LogIn from "./LogIn"; 
 import Button from "react-bootstrap/Button"
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import { useEffect } from "react";
-import RutasProtegidas from "../../routes/RutasProtegidas";
-import RutasAdmin from "../../routes/RutasAdmin";
 import { useNavigate } from 'react-router-dom';
+import Logo from "../../assets/imgCommon/imgNavbar/Logo.png";
+import "./styles/navbar.css";
 
 function NavBar({usuarioLogueado, setUsuarioLogueado, mostrarModalLogIn, handleAbrirModalLogIn, handleCerrarModalLogIn}) {
   const [mostrarModal, setMostrarModal] = useState(false);
@@ -49,8 +47,9 @@ function NavBar({usuarioLogueado, setUsuarioLogueado, mostrarModalLogIn, handleA
               </NavLink>
               <NavLink className="nav-link fw-bold" end to="/galeriaImagenes">
                 Galeria de Imágenes
-              </NavLink>            
-              <NavDropdown
+              </NavLink>   
+              {(!usuarioLogueado || usuarioLogueado.role !== "admin") && (
+                <NavDropdown
                 className="fw-bold"
                 title="Catálogo Habitaciones"
                 data-bs-theme="light">
@@ -72,6 +71,7 @@ function NavBar({usuarioLogueado, setUsuarioLogueado, mostrarModalLogIn, handleA
                   Suite Premium
                 </NavDropdown.Item>
               </NavDropdown>   
+              )}        
               {(!usuarioLogueado || usuarioLogueado.role !== "admin") && (
                 <NavLink className="nav-link fw-bold" end to="/reservas">Sus Reservas</NavLink>
               )}
