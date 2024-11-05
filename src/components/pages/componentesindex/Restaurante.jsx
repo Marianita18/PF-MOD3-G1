@@ -119,9 +119,9 @@ export const Restaurante = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section class="container-fluid sectionrestaurante">
-        <div class=" row ">
-          <div class="divrestaurante col-lg-6 col-md-10">
+      <section className="container-fluid sectionrestaurante">
+        <div className=" row ">
+          <div className="divrestaurante col-lg-6 col-md-10">
             <h1 className="text-center source-code-pro">
               Visita Nuestro Restaurante
             </h1>
@@ -132,7 +132,7 @@ export const Restaurante = () => {
             />
           </div>
 
-          <div class="divrestaurante col-lg-6 col-md-10">
+          <div className="divrestaurante col-lg-6 col-md-10">
             <h3 className="titulo-restaurante">Calidad de la Comida</h3>
             <li>Ingredientes frescos y de alta calidad.</li>
             <li>

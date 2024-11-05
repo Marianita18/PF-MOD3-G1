@@ -7,7 +7,7 @@ import { crearUsuario, obtenerUsuarios } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import "./styles/navbar.css";
 
-const Registro = ({ estoyCreando }) => {
+const Registro = ({ estoyCreando, id }) => {
   const {
     register,
     handleSubmit,
@@ -16,21 +16,23 @@ const Registro = ({ estoyCreando }) => {
   } = useForm();
 
   useEffect(() => {
-    if (estoyCreando) {
+    if (estoyCreando && id) {
       cargarDatosEnTabla();
     }
-  }, []);
+  }, [estoyCreando, id]); // Asegúrate de agregar id como dependencia
 
   const cargarDatosEnTabla = async () => {
-    reset();
+    reset(); // Limpia el formulario antes de cargar los datos
     const respuesta = await obtenerUsuarios(id);
-    if (respuesta.status === 200) {
-      reset();
+    if (respuesta && respuesta.status === 200) { // Verifica que la respuesta sea válida
       const datosUser = await respuesta.json();
       setValue("nombreCompleto", datosUser.nombreCompleto);
       setValue("correoUsuario", datosUser.correoUsuario);
+    } else {
+      Swal.fire("Error", "No se pudo obtener el usuario.", "error"); // Muestra un error si no se encuentra el usuario
     }
   };
+
 
   const usuarioCreado = async (usuario) => {
     if (estoyCreando) {

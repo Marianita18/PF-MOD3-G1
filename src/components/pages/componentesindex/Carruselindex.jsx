@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
 import "./cssindex/Carrusel.css";
 export const Carruselindex = () => {
   return (
@@ -15,7 +14,7 @@ export const Carruselindex = () => {
               src="/imgindex/camino.jpg"
               className="img-carousel d-block w-100 "
             ></img>
-            <div class="container">
+            <div className="container">
               <div className="row carousel-caption top-0">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}

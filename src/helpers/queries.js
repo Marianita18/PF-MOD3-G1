@@ -4,7 +4,7 @@ export const URLReservas = import.meta.env.VITE_API_RESERVAS;
 
 export const crearUsuario = async (usuarioNuevo) => {
   try {
-    const respuesta = await fetch(URLUsuarios, {
+    const respuesta = await fetch(URLUsuarios + "/usuarios", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const leerUsuarios = async () => {
 
 export const obtenerUsuarios = async (id) => {
   try {
-    const respuesta = await fetch(URLUsuarios + "/" + id);
+    const respuesta = await fetch(`${URLUsuarios}/usuarios/${id}`);
     return respuesta;
   } catch (error) {
     console.error(error);
@@ -209,16 +209,25 @@ export const login = (usuario) => {
 };
 
 //nuevo login usando el backend
-export const loginBack = async (usuario) => {
+export const loginback = async (usuario) => {
   try {
-    const respuesta = await fetch(URL_Usuario, {
+    const respuesta = await fetch(URLUsuarios + "/", {
+      // Asegúrate de que la URL es correcta, debes incluir el endpoint de login
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(usuario),
     });
-    return respuesta;
+    const datos = await respuesta.json();
+    return {
+      status: respuesta.status,
+      mensaje: datos.mensaje,
+      usuario: datos.nombre,
+      uid: datos.uid,
+      token: datos.token,
+      rol: datos.roll,
+    };
   } catch (error) {
     console.error(error);
     return { error: "Error en el login" };
