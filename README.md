@@ -1,8 +1,24 @@
-# React + Vite
+🌴Proyecto Final: Hotel Oasis Urbano🌴
+Descripción del Proyecto 📃
+En este proyecto los alumnos en forma grupal se dividirán las tareas necesarias para diseñar un sistema de gestión hotelera, con informacion e imagenes del hotel. El alcance de este proyecto se centra en realizar todos los pasos del CRUD y deberá contar con un login con diferentes opciones dependiendo el usuario que se loguea. Se considera que solo el usuario administrador podrá administrar las habitaciones y registros de usuarios, mientras que los clientes deberán iniciar su sesión o registrarse para poder realizar una reserva de una habitacion.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Requerimientos 📃✅
+Ingresa aquí para verlos
 
-Currently, two official plugins are available:
+Tecnologias Utilizadas 💻
+Git
+Node.js
+React
+Visual Studio Code
+Backend: https://github.com/JulianGr16/backend-oasisUrbano.git
+Clona tu repositorio💻
+Git clone https://github.com/Marianita18/PF-MOD3-G1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demo 💻
+Link de Netlify
+
+Autores 👩‍💻 👨‍💻
+Eugenia Sansierra perfil de GitHub.
+Julian Garay perfil de GitHub.
+Facundo Martinez perfil de GitHub.
+Ismael Vargas perfil de GitHub.
